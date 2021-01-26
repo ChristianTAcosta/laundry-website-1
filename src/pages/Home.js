@@ -11,7 +11,6 @@ function Home(){
            <HeroSection {...homeObjthree}  />
            <HeroSection {...homeObjfour}  />
 
-           
            </> 
     )
 }

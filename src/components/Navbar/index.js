@@ -19,7 +19,7 @@ function Navbar(){
                 {MenuItems.map((item,index) =>{
                     return(
                         <li key={index}>
-                            <a href={item.url} className={item.cName}>
+                            <a href={item.url} onClick={ ()=> {setClicked(!clicked)}} className={item.cName}>
                                 {item.title}
                             </a>
                         </li>
