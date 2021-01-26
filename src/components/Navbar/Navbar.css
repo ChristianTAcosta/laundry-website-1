@@ -1,0 +1,161 @@
+.NavbarItems{
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+height:40px;
+border-radius: 30px;
+display:flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+flex: 2;
+}
+
+
+
+.nav-menu{
+    display:flex;
+    list-style: none;
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.icons{
+    color:#000;
+}
+
+.nav-links{
+    color:#000;
+    text-decoration: none;
+    padding:1rem 2rem;
+}
+
+.navbar-logo{
+    display: none;
+}
+
+
+
+.nav-links:hover{
+    color:var(--primary);
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+
+
+ .nav-links-mobile{
+    display:none; 
+} 
+
+
+@media screen and (max-width:1400px){
+   .NavbarItems{
+       font-size: 0.8rem;
+
+    } 
+
+    .nav-links{
+
+       padding:1rem 1rem;
+    }
+
+}
+
+
+@media screen and (max-width:950px){
+    .nav-links{
+        padding:1rem 0.6rem;
+    }
+}
+
+
+
+@media screen and (max-width:854px){
+    .NavbarItems{
+        position: relative;
+        border-radius: 0px;
+
+    }
+
+    .nav-menu{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        position: absolute;
+        margin: 0;
+        top:40px;
+        left:-100%;
+        opacity:1;
+        transition: all 0.5s ease;
+    }
+
+     .nav-menu.active{
+        color:var(--primary);
+        left:0;
+        opacity: 0.98;
+        transition: all 0.5s ease;
+        z-index: 1;
+        padding:0;
+        background-color: #fff;
+        
+    }
+
+    .navbar-logo{
+        display: block;
+    }
+
+
+    
+
+    .nav-links{
+        text-align: center;
+        padding:1.5rem;
+        width:100%;
+        display:table;
+    }
+
+    .nav-links:hover{
+        background-color: #4ad9e4;
+        color:#fff;
+        border-radius: 0 ;
+        transition: all 0.3s ease;
+    }
+
+    .menu-icon{
+        display:block;
+        position: absolute;
+        top:0;
+        right:0;
+        transform:translate(-100%,20%);
+        font-size:1.8rem;
+        cursor:pointer;
+    } 
+
+
+
+    .nav-links-mobile{
+        display: block;
+        text-align: center;
+        padding:1rem;
+        margin:2rem auto;
+        border-radius: 4px;
+        text-decoration: none;
+        width: 80%;
+        background: #4ad9e4;
+        color:white;
+        font-size: 1.5rem;
+
+    }
+    .nav-links-mobile:hover{
+        background: #fff;
+        color:#4ad9e4;
+        font-size: 1.5rem;
+
+    }
+}
+
+
